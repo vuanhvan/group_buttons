@@ -42,6 +42,7 @@ class GroupCustomButton extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: borderRadius ?? BorderRadius.circular(30),
         boxShadow: isSelected ? selectedShadow : unselectedShadow,
+        border: Border.all( color: isSelected ? selectedBorderColor : unselectedBorderColor, width: 1)
       ),
       child: ElevatedButton(
         onPressed: onPressed,
